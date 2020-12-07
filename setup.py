@@ -7,5 +7,5 @@ setup(
       packages=[
       'numpy>=1.0',
       'deap=>1.2',
-      'sklearn=>0.17']
+      'scikit-learn=>0.17']
 )
