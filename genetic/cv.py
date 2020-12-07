@@ -114,7 +114,7 @@ class GeneticSearchCV(BaseSearchCV):
 #             iid=iid, refit=refit, cv=cv, verbose=verbose,
 #             error_score=error_score)
         super(GeneticSearchCV, self).__init__(
-            estimator=estimator, scoring=scoring, fit_params=fit_params,
+            estimator=estimator, scoring=scoring,
             iid=iid, refit=refit, cv=cv, verbose=verbose,
             error_score=error_score)
         self.params = params
