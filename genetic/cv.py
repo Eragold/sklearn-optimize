@@ -106,6 +106,13 @@ class GeneticSearchCV(BaseSearchCV):
                  tournament_size=3, generations_number=10, gene_type=None,
                  n_jobs=1, iid=True, error_score='raise',
                  fit_params={}):
+        # Bug : fit_params error
+        # Bug fix: Added this line
+        self.fit_params = fit_params
+#         super(GeneticSearchCV, self).__init__(
+#             estimator=estimator, scoring=scoring, fit_params=fit_params,
+#             iid=iid, refit=refit, cv=cv, verbose=verbose,
+#             error_score=error_score)
         super(GeneticSearchCV, self).__init__(
             estimator=estimator, scoring=scoring, fit_params=fit_params,
             iid=iid, refit=refit, cv=cv, verbose=verbose,
